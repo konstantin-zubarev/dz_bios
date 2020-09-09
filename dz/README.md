@@ -55,7 +55,7 @@
 ```
 ```
 VG		#PV	#LV	#SN	Attr	VSize		VFree
-VolGroup00	1	2	0	wz--n-	<38.97g	0 
+VolGroup00	1	2	0	wz--n-	<38.97g	    0 
 ```
 Переменуем группу VolGroup00 на OtusRoot
 ```
@@ -85,7 +85,7 @@ VolGroup00	1	2	0	wz--n-	<38.97g	0
 ```
 ```
 VG		#PV	#LV	#SN	Attr	VSize		VFree
-OtusRoot	1	2	0	wz--n-	<38.97g	0 
+OtusRoot	1	2	0	wz--n-	<38.97g	    0 
 ```
 #### Добавить модуль в initrd
 

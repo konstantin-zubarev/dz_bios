@@ -120,8 +120,6 @@ install() {
 test.sh - собственно сам вызываемый скрипт, в нём у нас рисуется пингвинчик
 ```
 # vi /usr/lib/dracut/modules.d/01test/test.sh
-chown +x /usr/lib/dracut/modules.d/01test/test.sh
-chmod +x /usr/lib/dracut/modules.d/01test/test.sh
 ```
 ```
 #!/bin/bash
@@ -144,6 +142,9 @@ Hello! You are in dracut module!
 msgend
 sleep 10
 echo " continuing...."
+```
+```
+chmod +x /usr/lib/dracut/modules.d/01test/test.sh
 ```
 Пересобираем образ initrd
 ```

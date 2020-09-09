@@ -155,7 +155,7 @@ chmod +x /usr/lib/dracut/modules.d/01test/test.sh
 ```
 # lsinitrd -m /boot/initramfs-$(uname -r).img | grep test
 ```
-После перезагрузки системы, можно увить наш модуль.
+После перезагрузки системы, можно увидеть наш модуль.
 ![](docs/4.jpg)
 
 Ссылка на дополнительную информацию

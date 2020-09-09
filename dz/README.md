@@ -98,7 +98,6 @@ OtusRoot	1	2	0	wz--n-	<38.97g	   0
 module-setup.sh - который устанавливает модуль и вызывает скрипт test.sh
 ```
 # vi /usr/lib/dracut/modules.d/01test/module-setup.sh
-# chmod +x /usr/lib/dracut/modules.d/01test/module-setup.sh
 ```
 ```
 #!/bin/bash
@@ -114,6 +113,9 @@ depends() {
 install() {
     inst_hook cleanup 00 "${moddir}/test.sh"
 }
+```
+```
+# chmod +x /usr/lib/dracut/modules.d/01test/module-setup.sh
 ```
 test.sh - собственно сам вызываемый скрипт, в нём у нас рисуется пингвинчик
 ```
